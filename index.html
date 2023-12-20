@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+</head>
+<style>
+    h1{
+        text-align: center;
+        margin: 100px 300px 100px 300px;
+        background-color: #ffffff;
+        border: 1px solid black;
+        opacity: 0.6;
+        color: rgb(0, 0, 0);
+    }
+    .bb{
+        background-image: url('image.jpg');
+    }
+  .aa{
+    background-color: rgb(133, 226, 255);
+    margin: 100px 300px 150px 300px;
+    border: 2px solid black;
+    text-align: center;
+    color: black;
+    border-width: 2px;
+    padding-top: 25px;
+    padding-bottom: 25px;
+  }
+</style>
+<body class="bb">
+    <h1>CALCULATOR</h1>
+    <div class="aa">
+    <b>Enter a number 1 : </b><input tupe="number" id="num1"><br><br>
+    <b>Enter a number 2 : </b><input tupe="number" id="num2"><br><br>
+    <button id="resul" onclick="add()">ADDITION</button>
+    <p id="displayResul"></p>
+    <button id="resu" onclick="sub()">SUBTRACTION</button>
+    <p id="displayResu"></p>
+    <button id="res" onclick="mul()">MULTIPLICATION</button>
+    <p id="displayRes"></p>
+    <button id="re" onclick="div()">DIVISION</button>
+    <p id="displayRe"></p>
+</div>
+</body>
+<script>
+    function add()
+    {
+    var a=Number(num1.value)
+    var b=Number(num2.value)
+    var c=a+b
+    var z=document.getElementById("displayResul")
+    z.textContent="The Result is : " + c
+    }
+    function sub()
+    {
+    var a=Number(num1.value)
+    var b=Number(num2.value)
+    var c=a-b
+    var z=document.getElementById("displayResu")
+    z.textContent="The Result is : " + c
+    }
+    function mul()
+    {
+    var a=Number(num1.value)
+    var b=Number(num2.value)
+    var c=a*b
+    var z=document.getElementById("displayRes")
+    z.textContent="The Result is : " + c
+    }
+    function div()
+    {
+    var a=Number(num1.value)
+    var b=Number(num2.value)
+    var c=a/b
+    var z=document.getElementById("displayRe")
+    z.textContent="The Result is : " + c
+    }
+</script>
+</html>
